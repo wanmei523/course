@@ -1,3 +1,5 @@
+const { default: api } = require("../../utils/api")
+
 // pages/index/index.js
 Page({
 
@@ -12,7 +14,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    api.courses({
+      success:(res)=>{
+        console.log(res)
+      }
+    })
+    api.course(4,{
+      success:(res)=>{
+        console.log(res)
+      }
+    })
+    api.resource(1,12,{
+      success:(res)=>{
+        console.log(res)
+      }
+    })
   },
 
   /**
