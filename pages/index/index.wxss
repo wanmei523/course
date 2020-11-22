@@ -1,1 +1,9 @@
 /* pages/index/index.wxss */
+.course {
+  margin-top: 20rpx;
+}
+.course .title{
+  text-align: center;
+  width: 100%;
+  color: #333;
+}

@@ -1,23 +1,36 @@
-import api from '../../utils/api'
+const { default: api } = require("../../utils/api")
 
-// pages/index/index.js
+// pages/course/course.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    courses:{}
+    course_id:0,
+    course:null,
+    activeNames: "1",
+  },
+  //有赞折叠面板事件
+  onChange(event) {
+    this.setData({
+      activeNames: event.detail,
+    });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    api.courses({
+    console.log(options)
+    this.setData({
+      course_id:options.course_id
+    })
+    api.course(options.course_id,{
       success:(res)=>{
         this.setData({
-          courses:res.data
+          activeNames: res.data.chapter[0]?res.data.chapter[0].id : '1',
+          course:res.data
         })
       }
     })

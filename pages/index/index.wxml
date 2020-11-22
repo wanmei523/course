@@ -1,8 +1,37 @@
 <!--pages/index/index.wxml-->
-<view>
-<van-button type="default">默认按钮</van-button>
-<van-button type="primary">主要按钮</van-button>
-<van-button type="info">信息按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
+<view class="container">
+  <swiper indicator-dots="true" autoplay="ture">
+    <swiper-item item-id="1">
+      <image src="/resource/image/a.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="2">
+      <image src="/resource/image/b.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="3">
+      <image src="/resource/image/c.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="4">
+      <image src="/resource/image/d.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="5">
+      <image src="/resource/image/e.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="6">
+      <image src="/resource/image/f.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item item-id="7">
+      <image src="/resource/image/g.jpg" style="width:100%" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  <view class="page_title">
+    <text>---- 世界这么大 ----</text>
+  </view>
+  <block wx:for="{{courses}}" wx:key='id' wx:for-item="course">
+    <navigator url="/pages/course/course?course_id={{course.id}}">
+    <view class="course flex" >
+      <image src="{{course.image_link}}"  class="image" ></image>
+      <text class="title" >{{course.title}}</text>
+    </view>
+  </navigator>
+  </block>
 </view>
