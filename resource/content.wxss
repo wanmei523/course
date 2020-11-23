@@ -1,0 +1,14 @@
+._h1,._h2,._h3 {
+  font-size: 0.7rem;
+  border-bottom: solid 1rpx #ccc;
+  margin-top: 10rpx;
+  color: #555;
+}
+._pre{
+  background: #f8f8f8;
+  padding-left: 2rpx;
+}
+._p,._ul{
+  line-height: 250%;
+  color: #555;
+}

@@ -24,7 +24,7 @@
     </swiper-item>
   </swiper>
   <view class="page_title">
-    <text>---- 世界这么大 ----</text>
+    <text>---- 世界这么大，我想去看看 ----</text>
   </view>
   <block wx:for="{{courses}}" wx:key='id' wx:for-item="course">
     <navigator url="/pages/course/course?course_id={{course.id}}">

@@ -1,0 +1,7 @@
+<view class="container">
+  <text class="page_title">{{resource.title}}</text>
+  <text class="baseinfo" >{{resource.desc}}</text>
+  <text style="text-align:right" class="baseinfo">{{resource.created_at}}</text>
+  <course-video wx:if="{{resource.video}}" res="{{resource}}"></course-video>
+  <course-doc wx:if="{{resource.doc}}" res="{{resource}}"></course-doc>
+</view>

@@ -60,9 +60,21 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/course/course",
+          "name": "课程详细",
           "pathName": "pages/course/course",
           "query": "course_id=1",
+          "scene": null
+        },
+        {
+          "name": "文档资源",
+          "pathName": "pages/learn/learn",
+          "query": "course_id=1&resource_id=12",
+          "scene": null
+        },
+        {
+          "name": "视频资源",
+          "pathName": "pages/learn/learn",
+          "query": "course_id=1&resource_id=13",
           "scene": null
         }
       ]

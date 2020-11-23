@@ -1,0 +1,7 @@
+/* pages/learn/learn.wxss */
+.baseinfo {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 10rpx;
+  line-height: 150%
+}

@@ -1,0 +1,1 @@
+<video id="myVideo" src="{{res.video.play_info.mp4.PlayURL}}" style="width:100%"></video>
